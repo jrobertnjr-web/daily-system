@@ -42,27 +42,17 @@ body {
 .pill { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.08em; color: var(--text-muted); padding: 4px 10px; border: 1px solid var(--border); border-radius: 2px; text-transform: uppercase; }
 .pill.today { color: var(--gold); border-color: var(--gold-dim); background: var(--gold-dim); }
 
-/* DAY NAV */
 .day-nav { display: grid; grid-template-columns: repeat(7,1fr); gap: 3px; margin-bottom: 20px; }
 .day-btn {
-  background: transparent;
-  border: 1px solid var(--border);
-  color: var(--text-muted);
-  font-family: 'DM Mono', monospace;
-  font-size: 10px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 10px 2px 8px;
-  cursor: pointer;
-  border-radius: 2px;
-  text-align: center;
-  -webkit-tap-highlight-color: transparent;
+  background: transparent; border: 1px solid var(--border); color: var(--text-muted);
+  font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.06em;
+  text-transform: uppercase; padding: 10px 2px 8px; cursor: pointer; border-radius: 2px;
+  text-align: center; -webkit-tap-highlight-color: transparent;
 }
 .day-btn .ds { display: block; font-size: 14px; font-weight: 600; font-family: 'DM Sans', sans-serif; margin-bottom: 2px; color: var(--text-dim); }
 .day-btn.active { background: var(--gold-dim); border-color: var(--gold); color: var(--gold); }
 .day-btn.active .ds { color: var(--gold); }
 
-/* PROGRESS */
 .prog-wrap { display: flex; align-items: center; gap: 12px; padding: 14px 16px; background: var(--dark); border: 1px solid var(--border); border-radius: 4px; margin-bottom: 24px; }
 .prog-pct { font-family: 'Bebas Neue', Impact, sans-serif; font-size: 24px; color: var(--gold); min-width: 52px; }
 .prog-track { flex: 1; height: 3px; background: var(--border); border-radius: 99px; overflow: hidden; }
@@ -70,7 +60,6 @@ body {
 .prog-txt { font-family: 'DM Mono', monospace; font-size: 11px; color: var(--text-dim); white-space: nowrap; }
 .reset-btn { background: transparent; border: 1px solid var(--border); color: var(--text-muted); font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; padding: 6px 10px; cursor: pointer; border-radius: 2px; -webkit-tap-highlight-color: transparent; }
 
-/* DAY HEADER */
 .day-hdr { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 24px; flex-wrap: wrap; }
 .day-title { font-family: 'Bebas Neue', Impact, sans-serif; font-size: 36px; letter-spacing: 0.04em; line-height: 1; }
 .day-focus { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); font-family: 'DM Mono', monospace; margin-top: 5px; }
@@ -78,12 +67,10 @@ body {
 .dry-badge.dry { background: var(--green-dim); color: var(--green); border: 1px solid rgba(74,158,107,0.3); }
 .dry-badge.drink { background: var(--gold-dim); color: var(--gold); border: 1px solid rgba(201,168,76,0.3); }
 
-/* SECTION */
 .section { margin-bottom: 20px; }
 .sec-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-muted); padding-bottom: 8px; display: flex; align-items: center; gap: 10px; }
 .sec-label::after { content: ''; flex: 1; height: 1px; background: var(--border); }
 
-/* ITEM */
 .item { background: var(--dark); border: 1px solid var(--border); border-radius: 3px; margin-bottom: 3px; }
 .item.done { border-color: rgba(74,158,107,0.25); background: rgba(74,158,107,0.04); }
 .item-row { display: flex; align-items: center; gap: 12px; padding: 14px 14px; cursor: pointer; -webkit-tap-highlight-color: transparent; }
@@ -98,7 +85,6 @@ body {
 .exp-icon { color: var(--text-muted); flex-shrink: 0; transition: transform 0.2s; }
 .item.open .exp-icon { transform: rotate(180deg); color: var(--gold); }
 
-/* DETAIL */
 .item-detail { display: none; padding: 4px 14px 14px 50px; border-top: 1px solid var(--border); }
 .item.open .item-detail { display: block; }
 .dlabel { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-muted); margin-top: 12px; margin-bottom: 4px; display: block; }
@@ -107,7 +93,6 @@ body {
 .dhow p { margin-bottom: 4px; }
 .sets-chip { display: inline-block; font-family: 'DM Mono', monospace; font-size: 10px; color: var(--gold); background: var(--gold-dim); border: 1px solid rgba(201,168,76,0.2); padding: 3px 10px; border-radius: 2px; margin-top: 10px; }
 
-/* COMPLETE */
 .complete { display: none; background: var(--green-dim); border: 1px solid rgba(74,158,107,0.3); border-radius: 3px; padding: 14px 18px; text-align: center; margin-bottom: 20px; }
 .complete.show { display: block; }
 .complete p { font-family: 'Bebas Neue', Impact, sans-serif; font-size: 22px; color: var(--green); letter-spacing: 0.06em; }
@@ -116,6 +101,17 @@ body {
 .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); text-align: center; }
 .footer p { font-family: 'Bebas Neue', Impact, sans-serif; font-size: 17px; letter-spacing: 0.08em; color: var(--text-muted); }
 .footer p span { color: var(--gold); }
+
+@media (max-width: 600px) {
+  .logo { font-size: 32px; }
+  .day-btn .ds { font-size: 13px; }
+  .day-btn { font-size: 9px; padding: 10px 3px; }
+  .item-name { font-size: 15px; }
+  .item-meta { font-size: 11px; }
+  .detail-why, .detail-how, .dwhy, .dhow { font-size: 13px; line-height: 1.7; }
+  .day-title { font-size: 32px; }
+  .app { padding: 0 14px 80px; }
+}
 </style>
 </head>
 <body>
@@ -149,36 +145,35 @@ var d = new Date().getDay();
 var today = DAYS[d === 0 ? 6 : d - 1];
 var currentDay = today;
 var checked = {};
-
-try { checked = JSON.parse(localStorage.getItem('jsb_v2') || '{}'); } catch(e) { checked = {}; }
+try { checked = JSON.parse(localStorage.getItem('jsb_v3') || '{}'); } catch(e) { checked = {}; }
 
 var MORNING = [
   {id:'m1',name:'Cayenne electrolyte water',meta:'5:45am — on waking',why:'Primes circulation, hydrates cells, wakes the metabolic system.',how:'16-20 oz warm water + 1/4 tsp cayenne + 1/4 tsp himalayan salt + juice of half a lemon. Made the night before.'},
-  {id:'m2',name:'16 oz plain water',meta:'5:50am — pre-walk',why:'Prevents cramp and supports electrolyte balance during the walk.',how:'Drink 16 oz plain water before stepping on the treadmill. Room temperature or warm is best.'},
-  {id:'m3',name:'Dry brush',meta:'5:52am — 3-5 min',why:'Stimulates circulation and lymphatic system before the walk. Skin is clean and completely dry — ideal brushing surface. Wakes up the nervous system.',how:'Always brush toward the heart. Start at feet, move up legs, then hands up arms, then torso toward chest. Firm pressure but not painful — skin should be pink not red. Natural bristle brush only.'},
-  {id:'m4',name:'Interval walk — 30 min',meta:'5:57am — 3 min slow / 3 min fast x5',why:'Japanese interval protocol — most evidence-backed tool for visceral fat reduction in men over 50.',how:'Slow phase (2.0-2.5 mph): reset posture, chin up, shoulders back, light glute squeeze.\nFast phase (3.5-3.8 mph): drive arms, engage core, push heel to toe.\nRepeat 5 times for 30 minutes total.'},
+  {id:'m2',name:'16 oz plain water',meta:'5:50am — pre-walk',why:'Prevents cramp and supports electrolyte balance during the walk.',how:'Drink before stepping on the treadmill. Room temperature or warm is best.'},
+  {id:'m3',name:'Dry brush',meta:'5:52am — 3-5 min',why:'Stimulates circulation and lymphatic system before the walk. Wakes up the nervous system.',how:'Always brush toward the heart. Start at feet, move up legs, then hands up arms, then torso toward chest. Firm pressure — skin should be pink not red. Natural bristle brush only.'},
+  {id:'m4',name:'Interval walk — 30 min',meta:'5:57am — 3 min slow / 3 min fast x5',why:'Japanese interval protocol — most evidence-backed tool for visceral fat reduction in men over 50.',how:'Slow (2.0-2.5 mph): chin up, shoulders back, light glute squeeze.\nFast (3.5-3.8 mph): drive arms, engage core, push heel to toe. Repeat 5 times.'},
 ];
 
 var SHAOLIN = [
   {id:'s1',name:'Cat cow spine wave',meta:'10 slow cycles',why:'Wakes up the spine, opens chest, loosens tight upper back.',how:'All fours, hands under shoulders, knees under hips. Breathe in: belly drops, chest lifts, tailbone up. Breathe out: round back, tuck chin, tailbone in. One breath per movement.'},
-  {id:'s2',name:'Low dragon',meta:'45 sec each side',why:'Your most critical stretch — directly attacks the hip flexors causing your anterior pelvic tilt.',how:'Step right foot forward into deep lunge, lower left knee to floor. Drive hips forward until deep pull through front of left hip and thigh. Hold 45 sec. Switch sides. Long stride — the longer the stride the deeper the stretch.'},
-  {id:'s3',name:'Deep squat hold',meta:'60 sec',why:'Opens hips, ankles, calves, and lower back simultaneously. Triggers deep muscle and hormonal activation.',how:'Feet slightly wider than shoulder width, toes out. Lower as deep as possible, heels on floor. Press hands together at chest, elbows push knees open. Use rolled towel under heels if needed.'},
-  {id:'s4',name:'Cossack stretch',meta:'10 slow reps',why:'Trains lateral mobility most men never work. The body slowly loses what it does not train.',how:'Feet very wide. Shift weight to right, bend right knee, lower hips. Left leg straight, toes up. Pause at bottom. Move to left side. That is one rep. Go slow.'},
-  {id:'s5',name:'Spinal twist',meta:'45 sec each side',why:'Restores upper back rotation. When spine stops turning well, neck and lower back do extra work.',how:'Sit on floor, legs straight. Bend right knee, cross right foot over left leg. Left elbow on outside of right knee, rotate upper body right. Right hand behind for support. Deepen on each exhale.'},
+  {id:'s2',name:'Low dragon',meta:'45 sec each side',why:'Attacks the hip flexors causing your anterior pelvic tilt. Most critical daily stretch.',how:'Step right foot forward into deep lunge, lower left knee to floor. Drive hips forward until deep pull through front of left hip. Hold 45 sec. Switch sides. Long stride — the longer the stride the deeper the stretch.'},
+  {id:'s3',name:'Deep squat hold',meta:'60 sec',why:'Opens hips, ankles, calves, and lower back simultaneously.',how:'Feet slightly wider than shoulder width, toes out. Lower as deep as possible, heels on floor. Press hands together at chest, elbows push knees open. Use rolled towel under heels if needed.'},
+  {id:'s4',name:'Cossack stretch',meta:'10 slow reps',why:'Trains lateral mobility most men never work.',how:'Feet very wide. Shift weight to right, bend right knee, lower hips. Left leg straight, toes up. Pause at bottom. Move to left side. That is one rep. Go slow.'},
+  {id:'s5',name:'Spinal twist',meta:'45 sec each side',why:'Restores upper back rotation. When spine stops turning well, neck and lower back do extra work.',how:'Sit on floor, legs straight. Bend right knee, cross right foot over left leg. Left elbow on outside of right knee. Rotate upper body right. Right hand behind for support. Deepen on each exhale.'},
   {id:'s6',name:'Standing wave',meta:'90 sec',why:'Loosens the whole body together. Calms the nervous system after deeper stretches.',how:'Feet shoulder width, soften knees. Small bend and straighten through knees, let motion travel up through hips, lower back, midback, shoulders, arms. Slow, loose, continuous.'},
 ];
 
 var POST = [
-  {id:'pw1',name:'Whey isolate + creatine shake',meta:'6:37am — within 30 min post-walk',why:'Highest leverage protein window of the day. Muscles primed to absorb protein. Creatine preserves muscle during fat loss.',how:'1 scoop whey isolate + 3-5g creatine monohydrate in 8-10 oz water or milk. Shake 30 seconds. Drink immediately.'},
-  {id:'pw2',name:'Penis pump session',meta:'6:42am — 10-20 min per urologist',why:'Circulation is maximized post-walk and post-Shaolin. Hips are open from low dragon and deep squat. Optimal physiological window.',how:'Follow urologist protocol exactly. 10-20 minutes. Complete before showering.'},
+  {id:'pw1',name:'Whey isolate + creatine shake',meta:'6:37am — within 30 min post-walk',why:'Highest leverage protein window of the day. Muscles primed to absorb protein.',how:'1 scoop whey isolate + 3-5g creatine in 8-10 oz water or milk. Shake 30 seconds. Drink immediately.'},
+  {id:'pw2',name:'Penis pump session',meta:'6:42am — 10-20 min per urologist',why:'Circulation is maximized post-walk and post-Shaolin. Hips are open. Optimal physiological window.',how:'Follow urologist protocol exactly. 10-20 minutes. Complete before showering.'},
   {id:'pw3',name:'Shower',meta:'7:02am',why:'Wash off sweat and transition from training to work day.',how:''},
-  {id:'pw4',name:'Moisturize',meta:'7:10am',why:'Post-shower moisturizing supports skin health after dry brushing and training.',how:'Apply to still-slightly-damp skin for best absorption.'},
-  {id:'pw5',name:'3 eggs + probiotic',meta:'7:15am',why:'Combined with shake: 50-60g protein before 8am. Probiotic taken with food for maximum survival. Critical for gut health especially with diverticulitis history.',how:'Cook eggs however preferred. Take 1 Nature\'s Way Fortify capsule with your first few bites. Do not take with cayenne water or cinnamon.'},
+  {id:'pw4',name:'Moisturize',meta:'7:10am',why:'Supports skin health after dry brushing and training.',how:'Apply to still-slightly-damp skin for best absorption.'},
+  {id:'pw5',name:'3 eggs + probiotic',meta:'7:15am',why:'50-60g protein before 8am. Probiotic with food for maximum survival. Critical for gut health with diverticulitis history.',how:'Cook eggs however preferred. Take 1 Nature\'s Way Fortify capsule with first few bites. Do not take with cayenne water or cinnamon.'},
 ];
 
 var CORR = [
   {id:'c1',name:'90/90 hip flexor stretch',meta:'60 sec',why:'Directly counters the anterior pelvic tilt. Resets the pelvis before every training session.',how:'Lie on back, both knees bent at 90 degrees, feet flat. Press lower back firmly into the floor — no gap. Hold 60 seconds breathing slowly.'},
-  {id:'c2',name:'Glute bridge — upgraded',meta:'3 x 15 reps, 3 sec hold at top',why:'Reactivates sleeping glutes and drives blood into the pelvic region. Supports urologist protocol.',how:'Lie flat, walk feet in until fingertips lightly touch heels. Brace core gently. Press through heels, lift hips to straight line knees-hips-shoulders. Squeeze hard, hold 2-3 sec at top. The pause is the point.'},
+  {id:'c2',name:'Glute bridge — upgraded',meta:'3 x 15 reps, 3 sec hold at top',why:'Reactivates sleeping glutes and drives blood into the pelvic region.',how:'Lie flat, walk feet in until fingertips lightly touch heels. Brace core gently. Press through heels, lift hips to straight line knees-hips-shoulders. Squeeze hard, hold 2-3 sec at top. The pause is the point.'},
   {id:'c3',name:'Dead bug',meta:'3 x 10 each side',why:'Trains deep spinal stabilizers with lower back pressed flat. Directly retrains the pelvic tilt pattern.',how:'On back, arms to ceiling, knees at 90 degrees above hips. Lower back glued to floor throughout. Slowly lower right arm and left leg simultaneously. Return. Switch. Go slow.'},
 ];
 
@@ -187,119 +182,110 @@ var CORR2 = [CORR[0], CORR[1]];
 var NIGHT = [
   {id:'n1',name:"Mix tomorrow's cayenne electrolyte water",meta:'9:30pm',why:'Remove all morning friction. It is ready when you wake up.',how:'Warm water + 1/4 tsp cayenne + 1/4 tsp himalayan salt + juice of half a lemon. Refrigerate or leave on counter.'},
   {id:'n2',name:'Chia and cinnamon water',meta:'9:45pm',why:'Regulates blood sugar overnight, supports gut health, and reduces inflammation.',how:'1 tbsp chia seeds + 1 tsp Ceylon cinnamon blended in 18 oz water. Drink before bed.'},
-  {id:'n3',name:'Lights out',meta:'10:00pm',why:'Testosterone is produced during deep sleep. Consistent bedtime is as important as the time itself.',how:'No screens after 9:30pm. Room cool and dark. Consistent wake time tomorrow: 5:45am.'},
+  {id:'n3',name:'Lights out',meta:'10:00pm',why:'Testosterone is produced during deep sleep. Consistent bedtime is as important as the time itself.',how:'No screens after 9:30pm. Room cool and dark. Wake time tomorrow: 5:45am.'},
+];
+
+var NIGHT_SUN = [
+  {id:'ns1',name:"Mix Monday's cayenne electrolyte water",meta:'9:30pm',why:'Remove all Monday morning friction. It is ready when you wake up.',how:'Warm water + 1/4 tsp cayenne + 1/4 tsp himalayan salt + juice of half a lemon. Refrigerate or leave on counter.'},
+  {id:'ns2',name:'Chia and cinnamon water',meta:'9:45pm',why:'Regulates blood sugar overnight, supports gut health, and reduces inflammation.',how:'1 tbsp chia seeds + 1 tsp Ceylon cinnamon blended in 18 oz water. Drink before bed.'},
+  {id:'ns3',name:'Prepare mentally for Monday',meta:'Before lights out — 10:00pm',why:'Sunday night sets the tone for the entire week. Consistent bedtime protects testosterone production during deep sleep.',how:'No screens after 9:30pm. Room cool and dark. Wake time tomorrow: 5:45am. Your week starts tonight.'},
 ];
 
 var SCH = {
-  Monday: { focus:'Core + Posterior Chain', dry:true, sections:[
+  Monday: { focus:'Core + Posterior Chain', sub:'15 min main session', dry:true, corr:CORR, sections:[
     {t:'Morning Stack', items:MORNING},
     {t:'Shaolin 6 — Post Walk (6:27am)', items:SHAOLIN},
     {t:'Post Walk Sequence (6:37am)', items:POST},
     {t:'Corrective Sequence — Do First (10:00am)', items:CORR},
     {t:'Main Session — Core + Posterior Chain (10:00am)', items:[
       {id:'mo1',name:'Hollow body hold',meta:'3 x 60 sec',why:'Ultimate deep core on-switch. Locks ribs to pelvis protecting your discs and restoring spinal control.',how:'Lie flat, press lower back into floor — no gap. Lift legs and shoulders just a few inches. Tuck knees if back arches. Hold 60 sec. Shaking means your nervous system is waking up.'},
-      {id:'mo2',name:'Bear crawl hold',meta:'3 x 60 sec',why:'Forces shoulders, core, and hips to work as one unit. Prevents disconnected movement that causes pulled muscles.',how:'All fours, hands under shoulders, knees under hips. Tuck toes, lift knees one inch off floor. Back flat. Hold 60 seconds.'},
-      {id:'mo3',name:'Plank hold',meta:'3 x 45 sec',why:'Builds anterior core while reinforcing the neutral spine position you are retraining.',how:'Forearms on floor, elbows under shoulders. Tuck pelvis — pull belly button toward spine, tailbone toward floor. Squeeze glutes AND abs simultaneously. No sagging hips.'},
-      {id:'mo4',name:'Superman hold',meta:'3 x 30 sec',why:'Strengthens lower back and posterior chain to support corrected posture.',how:'Lie face down, arms extended overhead. Lift arms, chest, and legs simultaneously. Squeeze glutes at top. Hold 30 seconds.'},
-      {id:'mo5',name:'Side plank',meta:'2 x 30 sec each side',why:'Builds lateral core stability — allows spine to resist rotation and compression.',how:'Lie on side, forearm on floor, elbow under shoulder. Lift hips so body forms straight line head to feet. Hold 30 seconds each side.'},
+      {id:'mo2',name:'Plank hold',meta:'3 x 45 sec',why:'Builds anterior core while reinforcing neutral spine. Squeeze glutes AND abs simultaneously.',how:'Forearms on floor, elbows under shoulders. Tuck pelvis — pull belly button toward spine, tailbone toward floor. Squeeze glutes AND abs. No sagging hips.'},
+      {id:'mo3',name:'Superman hold',meta:'3 x 30 sec',why:'Strengthens lower back and posterior chain to support corrected posture.',how:'Lie face down, arms extended overhead. Lift arms, chest, and legs simultaneously. Squeeze glutes at top. Hold 30 seconds. Lower with control.'},
+      {id:'mo4',name:'Side plank',meta:'2 x 30 sec each side',why:'Builds lateral core stability — allows spine to resist rotation and compression.',how:'Lie on side, forearm on floor, elbow under shoulder. Lift hips so body forms straight line head to feet. Hold 30 seconds each side.'},
     ]},
     {t:'Night Routine', items:NIGHT},
   ]},
-  Tuesday: { focus:'Upper Body + Shoulder Stability', dry:true, sections:[
+  Tuesday: { focus:'Upper Body + Shoulder Stability', sub:'15 min main session', dry:true, sections:[
     {t:'Morning Stack', items:MORNING},
     {t:'Shaolin 6 — Post Walk (6:27am)', items:SHAOLIN},
     {t:'Post Walk Sequence (6:37am)', items:POST},
     {t:'Corrective Sequence — Do First (10:00am)', items:CORR},
     {t:'Main Session — Upper Body + Shoulder Stability (10:00am)', items:[
-      {id:'tu1',name:'Shaolin wall push',meta:'6 x 10 sec maximum effort',why:'Maximum upper body strength activation with zero joint stress. Teaches your brain your muscles still need to be powerful.',how:'Stand facing solid wall, hands at chest height, feet stepped back. Try to push the wall over with everything you have. Do not move — drive all power through palms. Breathe throughout. Rest 15 seconds between sets.'},
-      {id:'tu2',name:'Wall push-up hold',meta:'3 x 30 sec pause at bottom',why:'Builds chest and shoulder strength with isometric pause that activates more muscle fibers.',how:'Hands on wall at chest height. Lower chest toward wall until arms at 90 degrees. Hold 30 seconds. Squeeze chest at the pause.'},
-      {id:'tu3',name:'Doorframe chest press ISO hold',meta:'3 x 30 sec',why:'Activates the full chest without equipment. Isometric contraction builds functional pressing strength.',how:'Stand in doorframe. Place palms on frame at chest height on each side. Press outward as hard as possible. Hold 30 seconds. Breathe throughout.'},
-      {id:'tu4',name:'Scapular wall slide hold',meta:'3 x 20 sec',why:'Your photos show forward shoulders. This directly retrains the scapular muscles that pull shoulders back into correct position.',how:'Stand with back against wall, arms at 90 degrees, back of hands touching wall. Slowly slide arms up the wall keeping contact. Hold at top 20 seconds.'},
-      {id:'tu5',name:'Towel row hold',meta:'3 x 30 sec each arm',why:'Builds pulling strength that balances pushing muscles and corrects forward shoulder posture.',how:'Loop towel around door handle. Grab one end, step back until there is tension, lean back slightly. Pull yourself toward door. Hold 30 seconds. Switch arms.'},
-      {id:'tu6',name:'Overhead reach hold',meta:'2 x 30 sec',why:'Opens the chest and counters the forward shoulder pull seen in your posture photos.',how:'Stand tall. Reach both arms overhead, slightly behind your ears. Hold 30 seconds. Feel the stretch through chest, shoulders, and lats.'},
+      {id:'tu1',name:'Shaolin wall push',meta:'6 x 10 sec maximum effort',why:'Maximum upper body strength with zero joint stress. Teaches your brain your muscles still need to be powerful.',how:'Stand facing solid wall, hands at chest height, feet stepped back. Push the wall over with everything you have. Do not move — drive all power through palms. Breathe throughout. Rest 15 seconds between sets.'},
+      {id:'tu2',name:'Doorframe chest press ISO hold',meta:'3 x 30 sec',why:'Activates the full chest without equipment. Isometric contraction builds functional pressing strength.',how:'Stand in doorframe. Place palms on frame at chest height on each side. Press outward as hard as possible. Hold 30 seconds. Breathe throughout.'},
+      {id:'tu3',name:'Scapular wall slide hold',meta:'3 x 20 sec',why:'Directly retrains the scapular muscles that pull your forward shoulders back into correct position.',how:'Stand with back against wall, arms at 90 degrees, back of hands touching wall. Slowly slide arms up keeping contact throughout. Hold at top 20 seconds. Should feel like work across your upper back.'},
+      {id:'tu4',name:'Towel row hold',meta:'3 x 30 sec each arm',why:'Builds pulling strength that balances pushing muscles and corrects forward shoulder posture.',how:'Loop towel around door handle. Grab one end, step back until tension, lean back slightly. Pull yourself toward door holding the contraction. Hold 30 seconds. Switch arms.'},
     ]},
     {t:'Night Routine', items:NIGHT},
   ]},
-  Wednesday: { focus:'Hip Flexors + Full Body Flexibility', dry:true, sections:[
+  Wednesday: { focus:'Hip Flexors + Full Body Flexibility', sub:'20 min — most important session of the week', dry:true, sections:[
     {t:'Morning Stack', items:MORNING},
     {t:'Shaolin 6 — Post Walk (6:27am)', items:SHAOLIN},
     {t:'Post Walk Sequence (6:37am)', items:POST},
     {t:'Corrective Sequence — Do First (10:00am)', items:CORR2},
     {t:'Main Session — Hip Flexors + Full Body Flexibility (10:00am)', items:[
-      {id:'we1',name:'Pancake stretch',meta:'3 x 8-10 reps slow',why:'Reactivates the entire posterior chain from feet through hamstrings into hips and spine. Directly supports pelvic floor function and urologist protocol.',how:'Stand with feet wide — twice shoulder width. Hinge forward at hips only. Keep spine long, chest slightly open. Lower torso until parallel to ground. Pause 2-3 seconds. Rise with control. This is not cardio — go slow.'},
-      {id:'we2',name:'Deep lunge hold',meta:'3 x 45 sec each side',why:'Your most important stretch. Directly targets hip flexors causing anterior pelvic tilt.',how:'Step right foot forward into a deep lunge — take a long stride. Lower left knee to the ground. Drive hips forward slowly until deep pull from front of hip down into thigh. Hold 45 seconds.'},
-      {id:'we3',name:'Pigeon pose hold',meta:'3 x 45 sec each side',why:'Deep external hip rotation stretch targeting piriformis and deep glute muscles — source of hip stiffness limiting your movement.',how:'From plank, bring right knee toward right hand, right foot toward left hand. Lower hips toward floor. Left leg extended behind. Use folded towel under right hip if needed. Hold 45 seconds. Switch sides.'},
-      {id:'we4',name:'Standing hamstring hold',meta:'3 x 30 sec',why:'Tight hamstrings contribute directly to anterior pelvic tilt by pulling the pelvis and forcing the lower back to compensate.',how:'Stand tall. Hinge forward at hips and reach toward toes. Let upper body hang loose. Hold 30 seconds. Breathe.'},
-      {id:'we5',name:'Figure-four hip stretch',meta:'3 x 45 sec each side',why:'Targets deep hip rotators and glutes for maximum lower back and hip relief.',how:'Lie on your back. Cross right ankle over left knee creating a figure four shape. Pull left thigh toward chest until you feel stretch in right hip and glute. Hold 45 seconds. Switch sides.'},
-      {id:'we6',name:'Thoracic rotation hold',meta:'3 x 20 sec each side',why:'Restores rotation through the mid-back that your posture photos indicate has been restricted.',how:'Sit on floor, legs crossed. Place right hand behind head. Rotate upper body to right as far as comfortable. Hold 20 seconds. Switch sides.'},
+      {id:'we1',name:'Pancake stretch',meta:'3 x 10 reps slow and controlled',why:'Reactivates the entire posterior chain from feet through hamstrings into hips and spine. Directly supports pelvic floor function.',how:'Stand feet wide — twice shoulder width. Hinge forward at hips only — not from back or shoulders. Spine long, chest slightly open. Lower torso until parallel to ground. Pause 2-3 seconds. Rise with control. This is not cardio — go slow.'},
+      {id:'we2',name:'Pigeon pose hold',meta:'3 x 45 sec each side',why:'Deep external hip rotation stretch targeting the piriformis and deep glute muscles — source of hip stiffness.',how:'From plank, bring right knee toward right hand, right foot toward left hand. Lower hips toward floor. Left leg extended behind. Use folded towel under right hip if needed. Hold 45 seconds. Switch sides.'},
+      {id:'we3',name:'Figure-four hip stretch',meta:'3 x 45 sec each side',why:'Targets deep hip rotators and glutes for maximum lower back and hip relief.',how:'Lie on your back. Cross right ankle over left knee creating a figure four shape. Pull left thigh toward chest until you feel stretch in right hip and glute. Hold 45 seconds. Switch sides.'},
+      {id:'we4',name:'Thoracic rotation hold',meta:'3 x 20 sec each side',why:'Restores rotation through the mid-back that your posture photos indicate has been restricted.',how:'Sit on floor, legs crossed. Place right hand behind head. Rotate upper body to right as far as comfortable. Hold 20 seconds. Switch sides. Let each exhale take you further.'},
+      {id:'we5',name:'Standing hamstring hold',meta:'3 x 30 sec',why:'Tight hamstrings pull the pelvis and force the lower back to compensate — directly feeds your anterior pelvic tilt.',how:'Stand tall. Hinge forward at hips and reach toward toes. Let upper body hang loose. No resistance. Hold 30 seconds. Breathe.'},
     ]},
     {t:'Night Routine', items:NIGHT},
   ]},
-  Thursday: { focus:'Lower Body + Balance', dry:true, sections:[
+  Thursday: { focus:'Lower Body + Balance', sub:'15 min main session', dry:true, sections:[
     {t:'Morning Stack', items:MORNING},
     {t:'Shaolin 6 — Post Walk (6:27am)', items:SHAOLIN},
     {t:'Post Walk Sequence (6:37am)', items:POST},
     {t:'Corrective Sequence — Do First (10:00am)', items:CORR},
     {t:'Main Session — Lower Body + Balance (10:00am)', items:[
-      {id:'th1',name:'Horse stance',meta:'3 x 60 sec building to 90 sec',why:'The Shaolin foundation. Stimulates nitric oxide production which dilates blood vessels and improves circulation to the lower body — supporting testosterone signaling.',how:'Feet wider than shoulder width — about 1.5 times. Slowly lower hips as if sitting into invisible chair. Knees tracking in line with toes. Spine upright. Heat in muscles is correct — pain in joints means adjust.'},
-      {id:'th2',name:'Hollow body hold',meta:'3 x 60 sec',why:'Reinforces deep core activation from Monday. Consistency is what changes the pattern.',how:'Lie flat on your back. Press lower back into floor. Lift legs and shoulders just a few inches. Tuck knees if back arches. Hold 60 seconds.'},
-      {id:'th3',name:'Bear crawl hold',meta:'3 x 60 sec',why:'Second session this week locks in the full-body integration pattern.',how:'All fours, hands under shoulders, knees under hips. Tuck toes, lift knees one inch. Back flat. Hold 60 seconds.'},
-      {id:'th4',name:'Wall sit',meta:'3 x 60 sec',why:'Bulletproofs your knees. Builds the specific endurance that keeps you moving independently for decades.',how:'Lean back against flat wall. Slide down until knees at 90 degrees. Weight in heels. Back glued to wall. Aim for 60 seconds.'},
-      {id:'th5',name:'Single-leg balance hold',meta:'3 x 30 sec each leg',why:'Balance deteriorates faster than any other physical quality after 50. Training it directly prevents falls.',how:'Stand on one foot. Hold 30 seconds. Eyes open first, progress to eyes closed when stable. The wobble is the work.'},
-      {id:'th6',name:'Calf raise hold at top',meta:'3 x 30 sec',why:'Calf strength supports ankle stability and circulation back up through the legs toward the heart.',how:'Stand flat on floor or edge of step. Rise up on toes as high as possible. Hold at top 30 seconds. Lower slowly.'},
+      {id:'th1',name:'Horse stance',meta:'3 x 60 sec building to 90 sec',why:'The Shaolin foundation. Stimulates nitric oxide production which dilates blood vessels and improves circulation — supporting testosterone signaling.',how:'Feet wider than shoulder width — about 1.5 times. Slowly lower hips as if sitting into invisible chair. Knees tracking in line with toes. Spine upright, core lightly engaged. Heat in muscles is correct — pain in joints means adjust.'},
+      {id:'th2',name:'Wall sit',meta:'3 x 60 sec',why:'Bulletproofs your knees. Builds the specific endurance that keeps you walking and moving independently for decades.',how:'Lean back against flat wall. Slide down until knees at 90 degrees. Weight in heels. Back glued to wall. Aim for 60 seconds.'},
+      {id:'th3',name:'Single-leg balance hold',meta:'3 x 30 sec each leg',why:'Balance deteriorates faster than any other physical quality after 50. Training it directly prevents falls.',how:'Stand on one foot. Hold 30 seconds. Eyes open first, progress to eyes closed when stable. The wobble is the work.'},
+      {id:'th4',name:'Calf raise hold at top',meta:'3 x 30 sec',why:'Calf strength supports ankle stability and circulation back up through the legs toward the heart.',how:'Stand flat on floor or edge of step. Rise up on toes as high as possible. Hold at top 30 seconds. Lower slowly.'},
     ]},
     {t:'Night Routine', items:NIGHT},
   ]},
-  Friday: { focus:'Full Body Integration + Deep Stretch', dry:false, sections:[
+  Friday: { focus:'Full Body Integration + Deep Stretch', sub:'20 min — weekly reset', dry:false, sections:[
     {t:'Morning Stack', items:MORNING},
     {t:'Shaolin 6 — Post Walk (6:27am)', items:SHAOLIN},
     {t:'Post Walk Sequence (6:37am)', items:POST},
     {t:'Corrective Sequence — Do First (10:00am)', items:CORR2},
     {t:'Main Session — Full Body Integration + Deep Stretch (10:00am)', items:[
-      {id:'fr1',name:'Pancake stretch',meta:'3 x 8-10 reps',why:'Opens the posterior chain and pelvic floor for the week-end reset.',how:'Feet wide — twice shoulder width. Hinge at hips only — spine long, chest open. Lower to parallel. Pause 2-3 seconds. Rise with control. Slow and intentional.'},
-      {id:'fr2',name:'Plank to down dog flow',meta:'5 rounds slow, hold each',why:'Integrates core strength with full posterior chain flexibility.',how:'Start in plank. Hold 10 seconds. Push back into down dog — hips high, heels pressing toward floor. Hold 10 seconds. Return to plank. That is one round. Keep the transition slow.'},
-      {id:'fr3',name:"World's greatest stretch hold",meta:'3 x 30 sec each side',why:'The single most comprehensive mobility exercise — hits hip flexors, thoracic spine, hamstrings, and groin in one movement.',how:'From lunge with right foot forward. Place left hand on floor inside your right foot. Rotate right arm toward ceiling, opening your chest. Hold 30 seconds. Switch sides.'},
-      {id:'fr4',name:'Supported backbend hold',meta:'3 x 20 sec',why:'Counters the forward rounding your photos show across your upper back and chest.',how:'Sit on floor. Place hands behind you, fingers pointing away. Gently lift chest toward ceiling, let head drop back if comfortable. Hold 20 seconds.'},
-      {id:'fr5',name:'Seated spinal twist hold',meta:'3 x 30 sec each side',why:'Closes the week with full thoracic rotation restoration.',how:'Sit on floor, legs straight. Bend right knee, cross right foot over left leg. Left elbow on outside of right knee. Right hand behind for support. Rotate right. Hold 30 sec. Switch.'},
-      {id:'fr6',name:"Child's pose extended hold",meta:'1 x 2 min',why:'Your weekly nervous system reset. Decompresses the spine, releases the lower back. Do not skip this.',how:'Kneel and sit back toward your heels. Extend arms forward on the floor. Forehead rests on floor or folded towel. Breathe deeply for 2 full minutes.'},
+      {id:'fr1',name:'Pancake stretch',meta:'3 x 10 reps slow',why:'Opens the posterior chain and pelvic floor. Second session this week accelerates hip mobility progress.',how:'Feet wide — twice shoulder width. Hinge at hips only — spine long, chest open. Lower to parallel. Pause 2-3 seconds. Rise with control. Slow and intentional.'},
+      {id:'fr2',name:'Plank to down dog flow',meta:'5 rounds slow, hold each',why:'Integrates core strength with full posterior chain flexibility. Builds both stability and mobility simultaneously.',how:'Start in plank. Hold 10 seconds. Push back into down dog — hips high, heels pressing toward floor. Hold 10 seconds. Return to plank. That is one round. Keep the transition slow.'},
+      {id:'fr3',name:"World's greatest stretch hold",meta:'3 x 30 sec each side',why:'The single most comprehensive mobility exercise — hits hip flexors, thoracic spine, hamstrings, and groin in one movement.',how:'From lunge with right foot forward. Place left hand on floor inside your right foot. Rotate right arm toward ceiling opening your chest. Hold 30 seconds. Switch sides.'},
+      {id:'fr4',name:'Supported backbend hold',meta:'3 x 20 sec',why:'Counters the forward rounding your photos show across your upper back and chest.',how:'Sit on floor. Place hands behind you, fingers pointing away. Gently lift chest toward ceiling, let head drop back if comfortable. Hold 20 seconds. Breathe into your chest.'},
+      {id:'fr5',name:"Child's pose extended hold",meta:'1 x 2 min',why:'Your weekly nervous system reset. Decompresses the spine, releases the lower back. Do not skip this.',how:'Kneel and sit back toward your heels. Extend arms forward on the floor. Forehead rests on floor or folded towel. Breathe deeply for 2 full minutes.'},
     ]},
     {t:'Night Routine', items:NIGHT},
   ]},
-  Saturday: { focus:'Active Rest', dry:false, sections:[
+  Saturday: { focus:'Active Rest', sub:'Walk and Shaolin 6 only', dry:false, sections:[
     {t:'Morning Stack', items:MORNING},
     {t:'Shaolin 6 — Post Walk (6:27am)', items:SHAOLIN},
     {t:'Post Walk Sequence (6:37am)', items:POST},
     {t:'Today — Active Rest', items:[
-      {id:'sa1',name:'Active rest',meta:'No structured ISO session',why:'Your body rebuilds during rest. Saturday is active recovery — the walk and Shaolin six are enough. Do not train.',how:'Walk, move around, stretch if you feel like it. No ISO sessions, no weights. Let your body consolidate the week.'},
+      {id:'sa1',name:'Active rest',meta:'No structured ISO session',why:'Your body rebuilds during rest. Saturday is active recovery — the walk and Shaolin six are enough.',how:'Walk, move around, stretch if you feel like it. No ISO sessions, no weights. Let your body consolidate the week.'},
     ]},
     {t:'Night Routine', items:NIGHT},
   ]},
-  Sunday: { focus:'Full Rest + Week Prep', dry:false, sections:[
+  Sunday: { focus:'Full Rest + Week Prep', sub:'Walk and Shaolin 6 only', dry:false, sections:[
     {t:'Morning Stack', items:MORNING},
     {t:'Shaolin 6 — Post Walk (6:27am)', items:SHAOLIN},
     {t:'Post Walk Sequence (6:37am)', items:POST},
     {t:'Today — Full Rest', items:[
       {id:'su1',name:'Full rest',meta:'No structured training',why:'Sunday is your deepest recovery day. The walk and Shaolin six are your only requirements.',how:'Gentle mobility if you feel like it. No ISO sessions, no weights. Your body is preparing for Monday.'},
     ]},
-    {t:'Night Routine — Prepare for the Week', items:[
-      {id:'su2',name:"Mix Monday's cayenne electrolyte water",meta:'9:30pm',why:'Remove all Monday morning friction. It is ready when you wake up.',how:'Warm water + 1/4 tsp cayenne + 1/4 tsp himalayan salt + juice of half a lemon. Refrigerate or leave on counter.'},
-      {id:'su3',name:'Chia and cinnamon water',meta:'9:45pm',why:'Regulates blood sugar overnight, supports gut health, and reduces inflammation.',how:'1 tbsp chia seeds + 1 tsp Ceylon cinnamon blended in 18 oz water. Drink before bed.'},
-      {id:'su4',name:'Prepare mentally for Monday',meta:'Before lights out — 10:00pm',why:'Sunday night sets the tone for the entire week. Consistent bedtime protects testosterone production during deep sleep.',how:'No screens after 9:30pm. Room cool and dark. Wake time tomorrow: 5:45am. Your week starts tonight.'},
-    ]},
+    {t:'Night Routine — Prepare for the Week', items:NIGHT_SUN},
   ]},
 };
 
 function key(day, id) { return day + '__' + id; }
-
 function allItems(day) {
   var all = [];
   SCH[day].sections.forEach(function(s) { s.items.forEach(function(i) { all.push(i); }); });
   return all;
 }
-
-function save() {
-  try { localStorage.setItem('jsb_v2', JSON.stringify(checked)); } catch(e) {}
-}
+function save() { try { localStorage.setItem('jsb_v3', JSON.stringify(checked)); } catch(e) {} }
 
 function updateProgress(day) {
   var items = allItems(day);
@@ -310,8 +296,7 @@ function updateProgress(day) {
   document.getElementById('progPct').textContent = pct + '%';
   document.getElementById('progTxt').textContent = done + ' of ' + items.length;
   var banner = document.getElementById('completeBanner');
-  if (pct === 100) banner.className = 'complete show';
-  else banner.className = 'complete';
+  banner.className = pct === 100 ? 'complete show' : 'complete';
 }
 
 function toggleCheck(day, id) {
@@ -326,11 +311,7 @@ function toggleCheck(day, id) {
 function toggleExpand(id) {
   var el = document.getElementById('item_' + id);
   if (!el) return;
-  if (el.className.indexOf('open') >= 0) {
-    el.className = el.className.replace(' open', '');
-  } else {
-    el.className += ' open';
-  }
+  el.className = el.className.indexOf('open') >= 0 ? el.className.replace(' open','') : el.className + ' open';
 }
 
 function resetDay() {
@@ -342,11 +323,9 @@ function resetDay() {
 function renderDay(day) {
   currentDay = day;
   var s = SCH[day];
-
   document.querySelectorAll('.day-btn').forEach(function(b) {
     b.className = 'day-btn' + (b.getAttribute('data-day') === day ? ' active' : '');
   });
-
   document.getElementById('dayHdr').innerHTML =
     '<div><div class="day-title">' + day + '</div><div class="day-focus">' + s.focus + '</div></div>' +
     '<div class="dry-badge ' + (s.dry ? 'dry' : 'drink') + '">' + (s.dry ? 'Dry Day' : 'Max 2 drinks') + '</div>';
@@ -357,9 +336,7 @@ function renderDay(day) {
     sec.items.forEach(function(item) {
       var isDone = !!checked[key(day, item.id)];
       var howHtml = '';
-      if (item.how) {
-        item.how.split('\n').forEach(function(line) { if (line) howHtml += '<p>' + line + '</p>'; });
-      }
+      if (item.how) { item.how.split('\n').forEach(function(line) { if (line) howHtml += '<p>' + line + '</p>'; }); }
       html += '<div class="item' + (isDone ? ' done' : '') + '" id="item_' + item.id + '">' +
         '<div class="item-row" onclick="toggleExpand(\'' + item.id + '\')">' +
         '<div class="chk" onclick="event.stopPropagation();toggleCheck(\'' + day + '\',\'' + item.id + '\')">' +
@@ -376,12 +353,10 @@ function renderDay(day) {
     });
     html += '</div>';
   });
-
   document.getElementById('content').innerHTML = html;
   updateProgress(day);
 }
 
-// INIT
 document.getElementById('todayPill').textContent = 'Today: ' + today;
 document.getElementById('resetBtn').onclick = resetDay;
 
@@ -397,14 +372,10 @@ DAYS.forEach(function(d) {
 
 renderDay(today);
 
-// SERVICE WORKER REGISTRATION
+// SERVICE WORKER
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
-    navigator.serviceWorker.register('./sw.js').then(function(reg) {
-      console.log('SW registered, scope:', reg.scope);
-    }).catch(function(err) {
-      console.log('SW registration failed:', err);
-    });
+    navigator.serviceWorker.register('./sw.js').catch(function(err) { console.log('SW error:', err); });
   });
 }
 </script>
