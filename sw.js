@@ -1,37 +1,6 @@
 // James Sexy Body — Service Worker
-// VERSION: 1.1 — Cleaned up sessions, overlaps removed
-
-var CACHE_NAME = 'jsb-cache-v1.1';
-
-self.addEventListener('install', function(event) {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then(function(cache) {
-      return cache.addAll(['./', './index.html']);
-    }).then(function() { return self.skipWaiting(); })
-  );
-});
-
-self.addEventListener('activate', function(event) {
-  event.waitUntil(
-    caches.keys().then(function(names) {
-      return Promise.all(names.map(function(name) {
-        if (name !== CACHE_NAME) return caches.delete(name);
-      }));
-    }).then(function() { return self.clients.claim(); })
-  );
-});
-
-self.addEventListener('fetch', function(event) {
-  event.respondWith(
-    caches.match(event.request).then(function(response) {
-      if (response) return response;
-      return fetch(event.request).then(function(networkResponse) {
-        if (networkResponse && networkResponse.status === 200) {
-          var clone = networkResponse.clone();
-          caches.open(CACHE_NAME).then(function(cache) { cache.put(event.request, clone); });
-        }
-        return networkResponse;
-      }).catch(function() { return caches.match('./index.html'); });
-    })
-  );
-});
+// VERSION: 1.3 — Color-coded time blocks added
+var CACHE_NAME='jsb-cache-v1.3';
+self.addEventListener('install',function(e){e.waitUntil(caches.open(CACHE_NAME).then(function(c){return c.addAll(['./', './index.html']);}).then(function(){return self.skipWaiting();}));});
+self.addEventListener('activate',function(e){e.waitUntil(caches.keys().then(function(n){return Promise.all(n.map(function(name){if(name!==CACHE_NAME)return caches.delete(name);}));}).then(function(){return self.clients.claim();}));});
+self.addEventListener('fetch',function(e){e.respondWith(caches.match(e.request).then(function(r){if(r)return r;return fetch(e.request).then(function(nr){if(nr&&nr.status===200){var c=nr.clone();caches.open(CACHE_NAME).then(function(cache){cache.put(e.request,c);});}return nr;}).catch(function(){return caches.match('./index.html');});}));});
